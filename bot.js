@@ -2,11 +2,11 @@ const mineflayer = require('mineflayer');
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'perryland200.aternos.me', // <--- REEMPLAZA ESTO POR LA IP DE TU SERVER
-        port: 44337,                // Puerto predeterminado de Minecraft
-        username: 'AFKBot',    // Nombre genérico del bot/NPC dentro del juego
-        version: 1.20.1            // Autodetecta la versión exacta del servidor (1.8 a 1.21+)
-    });
+    host: 'perryland200.aternos.me',
+    port: 44337,
+    username: 'AFKBot',
+    version: "1.20.1"  // Use a valid Minecraft version string
+});
 
     bot.on('spawn', () => {
         console.log(`[NPC] El bot ha aparecido correctamente en el mapa.`);
